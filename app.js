@@ -2,7 +2,7 @@ const UNIT_PRICE = 60;
 const BOOKING_FEE = 10;
 
 function calculateTotal(quantity) {
-  return quantity * (UNIT_PRICE + BOOKING_FEE);
+  return quantity * UNIT_PRICE + BOOKING_FEE;
 }
 
 const totalNode = document.querySelector('#total');
@@ -43,3 +43,33 @@ document.querySelector('#confirm').addEventListener('click', () => {
   }
   feedbackNode.textContent = `Réservation simulée : ${quantity} place(s), ${calculateTotal(quantity)} €.`;
 });
+
+// ajjout pour menu burger
+const burger = document.querySelector('#burger');
+const navigation = document.querySelector('#navigation');
+
+burger.addEventListener('click', () => {
+
+    navigation.classList.toggle('active');
+
+    const isOpen = navigation.classList.contains('active');
+
+    burger.setAttribute('aria-expanded', isOpen);
+    burger.setAttribute(
+        'aria-label',
+        isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
+    );
+});
+
+
+const links = navigation.querySelectorAll('a');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navigation.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Ouvrir le menu');
+    });
+});
+
+

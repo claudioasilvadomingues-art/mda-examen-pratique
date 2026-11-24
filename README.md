@@ -31,7 +31,14 @@ Le temps imparti pour cette étape est de **2 h 50**. La remise dans Moodle est 
 
 
 
+partie1:
+coleurs couleurs trop simple 
+navbar navbar mal organisee et pas beau  a voir
+bouton sans hover impression quue le boutob ne marche pas
 
+
+partie2
+.js:
 premiere erreur calcul
 function calculateTotal(quantity) {
   return quantity * (UNIT_PRICE + BOOKING_FEE);
@@ -44,3 +51,22 @@ deuxieme erreur
 const response = await fetch('./data/atelier.json');
 correction
 const response = await fetch('./data/ateliers.json');
+
+.html:
+ajout de alt avec description du input
+input id="email" type="email" placeholder="Votre e-mail" alt="veuiller ajouter votre e-mail pour faire la reservation"
+ajout de alt et description a l'image
+img class="map" src="assets/plan-acces.svg" alt="image de la position de nos locaux, les locaux ce situent a droite de la rue porte d'entree acessible dans la cour"
+
+
+.css:
+voir commentaire fichier css
+.site-header {
+    background:#ffffff; 
+    padding:18px 24px; 
+    border-bottom:1px solid #dce2e8;
+    justify-content: space-between;
+    display: flex;
+}
+
+
