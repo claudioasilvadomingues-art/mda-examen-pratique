@@ -30,7 +30,7 @@ Objectifs attendus :
 Le temps imparti pour cette étape est de **2 h 50**. La remise dans Moodle est comprise dans ce délai.
 
 
-
+## claudio
 partie1:
 coleurs couleurs trop simple 
 navbar navbar mal organisee et pas beau  a voir
