@@ -28,3 +28,19 @@ Objectifs attendus :
 - Un historique Git consultable : lien de dépôt GitHub **ou** fichier `historique.bundle` créé avec `git bundle create historique.bundle --all`, ainsi que le résultat de `git log --oneline` dans le README.
 
 Le temps imparti pour cette étape est de **2 h 50**. La remise dans Moodle est comprise dans ce délai.
+
+
+
+
+premiere erreur calcul
+function calculateTotal(quantity) {
+  return quantity * (UNIT_PRICE + BOOKING_FEE);
+}
+correction
+function calculateTotal(quantity) {
+  return quantity * UNIT_PRICE + BOOKING_FEE;
+}
+deuxieme erreur
+const response = await fetch('./data/atelier.json');
+correction
+const response = await fetch('./data/ateliers.json');
